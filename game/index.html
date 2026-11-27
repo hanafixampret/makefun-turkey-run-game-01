@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gobble Getaway — The Great Thanksgiving Escape</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1a0e; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { position: relative; width: min(960px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #f7c873; border-radius: 6px; }
+  #hint { color: #e8c98f; text-align: center; font-size: 13px; padding: 8px 4px 0; line-height: 1.5; }
+  #hint b { color: #ffd98a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540"></canvas>
+  <div id="hint"><b>Space / ↑</b> jump (twice for double jump) &nbsp;·&nbsp; <b>↓ / S</b> slide &nbsp;·&nbsp; <b>H</b> hide in a haystack &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute &nbsp;·&nbsp; Click the buttons, or click the canvas to jump</div>
+</div>
+<script src="src/config.js"></script>
+<script src="src/random.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/sprites.js"></script>
+<script src="src/player.js"></script>
+<script src="src/farmer.js"></script>
+<script src="src/world.js"></script>
+<script src="src/game.js"></script>
+<script src="src/shots.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
